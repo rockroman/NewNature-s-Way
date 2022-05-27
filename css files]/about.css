@@ -1,0 +1,393 @@
+*{margin: 0;
+padding: 0;}
+
+body{
+    background-color: beige;
+    height: 2300px;
+    position: relative;
+}
+
+/* sign up form */
+
+#form-container{
+    
+    position: absolute;
+    right: 5%;
+    left: 10%;
+}
+
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.login-wrap{
+	width:100%;
+	margin:auto;
+	max-width:525px;
+	min-height:670px;
+	position:relative;
+	background:url(images/forest.jpg) no-repeat center;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;
+	background:rgba(1, 39, 4, 0.9);
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+	text-transform:uppercase;
+}
+.login-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+	color:#fff;
+	border-color:#1161ee;
+}
+.login-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group input[data-type="password"]{
+	text-security:circle;
+	-webkit-text-security:circle;
+}
+.login-form .group .label{
+	color:#aaa;
+	font-size:12px;
+}
+.login-form .group .button{
+	background:#1161ee;
+}
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+	color:#fff;
+}
+.login-form .group .check:checked + label .icon{
+	background:#1161ee;
+}
+.login-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+	transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+	transform:rotate(0);
+}
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+	text-align:center;
+}
+
+
+
+/* ^^end sign up form^^ */
+
+
+
+
+.main{
+    background-color: blue;
+    height: 37%;
+    background-image: url(/images/dawn.jpeg);
+    background-size: cover;
+    position: relative;
+
+}
+
+h1{
+    text-align: center;
+    font-weight: 800;
+}
+
+.top-head{
+    justify-content: flex-end;
+    padding-right: 10%;
+    opacity: 70%;
+}
+
+.top-head a:hover{
+    color: white;
+}
+
+.top-head a{
+    font-size: 20px;
+}
+
+/* images in main */
+ .left{
+    height: 45%;
+    width:40%;
+    position: absolute;
+    right: 6%;
+    top: 25%;
+}
+
+.centre{
+ 
+    height: 14%;
+    width:35%;
+    height: 85%;
+    margin-top: 2%;
+  
+   
+    border-radius: 50%;
+
+}
+
+
+/* *intro text window* */
+
+.intro{
+   background-image: url(/images/dawn.jpeg);
+   background-position: top;
+   height: 28%;
+   width: 35%;
+   margin-left: 5%;
+   margin-top: 19%;
+   padding: 2%;
+}
+.intro p{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+.intro h2{
+    font-weight: 900;
+}
+
+
+
+.bottom-main{
+
+    background-color: rgb(45, 45, 27);
+    
+    height: 14%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intro2{
+    width: 40%;
+    height: 85%;
+    /* border: 2px solid red; */
+    background-image: url(/images/water.jpg);
+    background-size: cover;
+    font-size: 20px;
+    font-weight: 700;
+    color:black;
+    padding: 3%;
+    border-radius: 7%;
+}
+
+/* testemonial section */
+
+
+#midlle{
+    background-color: rgb(7, 48, 70);
+    height: 40%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 30% 30% 30%;
+    gap: 2%;
+       
+}
+
+
+.card{
+    width: 65%;
+    height: 85%;
+  
+    margin:3% auto;
+}
+
+
+.card p{
+    color: black;
+
+}
+
+h5{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.card img{
+    width: 30%;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+
+img.card-img-top1{
+   height: 40%;
+   width: 30%;
+}
+
+
+
+.sun-hand{
+    width: 85%;
+    height: 90%;
+    margin: 10%;
+    margin-top: 3%;
+    border-radius: 5%;
+}
+
+.water-sound{
+    width: 85%;
+    height: 90%;
+    margin: 10%;
+    margin-top: 3%;
+    border-radius: 5%;
+}
+
+
+
+
+
+
+/* footer section */
+
+
+
+
+footer{
+    background-color: rgb(12, 3, 3);
+    height:9% ;
+}
+
+#right-side{
+    height: 86%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-right: 2%;
+
+}
+
+
+
+p{
+    color: antiquewhite;
+    margin-top: 0;
+}
+
+.trade-mark{
+    color: antiquewhite; 
+
+}
+.social-media{
+    font-size: 25px;
+    margin-top: 1%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    color: rgba(8, 235, 23, 0.92);
+   
+    
+}
+.social-media a{
+    color: rgba(8, 235, 23, 0.92);
+   
+    
+}
+.social-media a:hover{
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+

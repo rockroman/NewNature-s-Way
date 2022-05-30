@@ -105,3 +105,150 @@ footer{
     margin-left: 1%;
     margin-top: 1%;
 }
+.copyright{
+    font-size: 1.5em;
+    margin-top: 2%;
+    color: beige;
+}
+
+
+
+
+@media screen and (max-width:1000px){
+    h1{
+        margin-left:10%;
+        font-size: 2.5em;
+    }
+     
+    .nav-bar{
+        
+        margin-right: 15%;
+       
+    }
+         
+    #midlle{
+        margin-left: 10%;
+    }
+    hr{
+        margin-left: 10%;
+
+    }
+   
+    #midlle p{
+        font-size: 2.5rem;
+       
+    }
+    #midlle img{
+   
+        width: 20%;
+        margin-left: 3%;
+       
+    }
+    .copyright{
+        font-size: 1.2em;
+        margin-top: 2%;
+        color: beige;
+    }
+    
+
+}
+
+
+@media screen and (max-width:940px){
+
+    h1{
+        margin-left:10%;
+        font-size: 2.3em;
+    }
+    .nav-bar{
+        
+        margin-right: 17%;
+       
+    }
+    .nav-bar a{
+        font-size: 1.3em;
+        justify-content: space-between;
+        
+       
+      
+        
+    }
+
+}
+
+@media screen and (max-width:885px){
+    body{
+        height: 68rem;
+    }
+
+    #midlle{
+        
+        margin-top: 15%;
+        padding-top: 5%;
+
+    }
+ 
+}
+
+@media screen and (max-width:835px){
+    body{
+        height: 100vh;
+    }
+
+
+    .copyright{
+        font-size: 1.1em;
+        ;
+    }
+    .nav-bar{
+        width: 27%;
+        border-right: 10%;
+        justify-content: space-between;
+    }
+    .nav-bar a{
+        font-size: 1.1em;
+       
+    }
+}
+
+@media screen and (max-width:435px){
+    body{
+        height: 60rem;
+    }
+    header{
+        height:12%
+    }
+
+    h1{
+        font-size: 2rem;
+        margin-left: 3%;
+    }
+
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        height: 70%;
+        justify-content: center;
+        align-items: center;
+        gap: 17%;
+        margin-right: 2%;
+    }
+    hr{
+        margin-left: 3%;
+        width: 48%;
+    }
+    #midlle{
+        flex-direction: column;
+        margin-left: 5%;
+    }
+    #midlle img{
+        width: 80%;
+        margin-top: 15%;
+    }
+    .copyright p{
+     padding-left: 11%;
+        font-size: 0.9em;
+    }
+
+}

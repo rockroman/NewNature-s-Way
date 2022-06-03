@@ -15,3 +15,14 @@ function closeModal(){
     modal.style.display="none";
     main.style.filter="";
 }
+
+document.getElementById("register").addEventListener("click",()=>{
+    modal.style.display="block";
+    main.style.filter="blur(7px)";
+});
+
+document.getElementById("sign-in").addEventListener("click",()=>{
+    modal.style.display="block";
+    main.style.filter="blur(7px)";
+
+});

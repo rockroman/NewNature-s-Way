@@ -30,7 +30,7 @@ document.getElementById("sign-in").addEventListener("click",()=>{
 
 });
 
-document.getElementById("close").addEventListener("click",function(){
+document.getElementById("close").addEventListener("click",()=>{
     modal.style.display="none";
     main.style.filter="";
 

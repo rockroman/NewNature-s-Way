@@ -1,10 +1,10 @@
 window.onload=function(){
 
-let signInBtn=document.getElementById("sign-in").textContent;
-let registerBtn=document.getElementById("register").textContent;
+let signInBtn=document.getElementById("sign-in");
+let registerBtn=document.getElementById("register");
 let modal=document.getElementById("form-container");
 var main=document.querySelector(".main");
-var close=document.getElementById("close").innerText;
+var close=document.getElementById("close");
 
 function showModal(){
     modal.style.display="block";

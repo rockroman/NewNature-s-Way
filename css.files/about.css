@@ -482,6 +482,11 @@ p{
     }
 }
 @media screen and  (max-width:430px){
+	
+      #close{
+        right: -85%;
+        width: 15%;
+    }
 
     p.card-text,
     p.card-text1{

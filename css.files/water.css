@@ -230,7 +230,7 @@ h1{
 .nav-bar a{
     font-size: 1.5em;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.966);
+    color: rgba(223, 210, 210, 0.966);
     font-weight: 800;
   
     
@@ -304,6 +304,12 @@ footer{
     margin-top: 2%;
     color: beige;
 }
+.trade-mark{
+    margin-top: 2%;
+    color: rgba(121, 105, 228, 0.92);
+    font-size: 1.1em;
+}
+
 
 
 

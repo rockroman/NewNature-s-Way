@@ -20,7 +20,7 @@ body{
     position: absolute;
     right: 52%;
     left: 3%;
-    top: 0%;
+    top: 3%;
     z-index:1;
     display: none;
     animation: drop-in 0.4s linear;

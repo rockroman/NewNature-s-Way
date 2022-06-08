@@ -467,11 +467,34 @@ footer{
 @media screen and (max-width:375px){
     div.login-html{
         width: 330px;
+	    margin:auto;
     }
 
     h1{
         font-size: 2rem;
         margin-left: 3%;
+    }
+
+}
+@media screen and (max-width:355px){
+   
+    .nav-bar{
+        width: 45%;
+    }
+    footer{
+        padding-bottom: 1%;
+        gap: 3%;
+    }
+    .copyright p{
+        text-align: center;
+        width: 95%;
+        padding-left: 0;
+        margin: auto;
+    
+    }
+    .trade-mark{
+        margin-top: 5%;
+        margin-bottom: 0;
     }
 
 }

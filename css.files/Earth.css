@@ -309,7 +309,7 @@ em{
 }
 .big-pic{
     margin-top: 2%;
-    background-image: url(/images/glass-planet.jpg);
+    background-image: url(../images/glass-planet.jpg);
     height: 37%;
     background-size: cover;
 }
@@ -321,7 +321,7 @@ em{
 }
 .top-foot{
     height: 17%;
-    background-image: url(/images/leaf-planet.jpg);
+    background-image: url(../images/leaf-planet.jpg);
     background-size: cover;
     position: relative;
     border: 2px solid black;

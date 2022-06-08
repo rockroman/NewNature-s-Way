@@ -1,0 +1,642 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 1400px;
+}
+/* sign up form/ original idea by"Mohan Khadka" */
+
+#form-container{
+    
+    position: absolute;
+    right: 52%;
+    left: 3%;
+    top: 3%;
+    z-index:1;
+    display: none;
+    animation: drop-in 0.4s linear;
+    
+}
+@keyframes drop-in{
+    0%{
+        transform: rotate(-30deg) translateY(-150%);
+        opacity: 0;
+       
+    }
+    100%{
+        transform:rotate(0deg) translateY(0%);
+        opacity: 1;
+       
+    }
+}
+
+#close{
+    z-index: 1;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    width: 5%;
+    border-radius: 30%;
+    background-color: rgb(58, 142, 220);
+}
+
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.login-wrap{
+	width:100%;
+	margin:auto;
+	max-width:425px;
+	min-height:570px;
+	position:relative;
+	
+  
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+   
+}
+.login-html{
+	width:90vw;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;
+	/* background:rgba(1, 39, 4, 0.9); */
+    background-color: rgb(1, 2, 1);
+    cursor: pointer;
+  
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+    cursor: pointer;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+	text-transform:uppercase;
+}
+.login-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+    color: rgb(66, 66, 66);
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+	color:#fff;
+	border-color:#1161ee;
+}
+.login-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group input[data-type="password"]{
+	text-security:circle;
+	-webkit-text-security:circle;
+}
+.login-form .group .label{
+	color:#aaa;
+	font-size:12px;
+}
+.login-form .group .button{
+	background:#1161ee;
+}
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+	color:#fff;
+}
+.login-form .group .check:checked + label .icon{
+	background:#1161ee;
+}
+.login-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+	transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+	transform:rotate(0);
+}
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+    
+}
+.foot-lnk{
+	text-align:center;
+   color: rgb(90, 69, 69);
+}
+
+
+
+/* ^^end sign up form^^ */
+
+header{
+    width: 100%;
+    background-color: rgba(58, 33, 1, 0.9);
+    
+    height: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    padding-left: 4%;
+    padding-top: 4%;
+  
+    color: rgba(8, 240, 8, 0.945);
+    border: 1px silver solid;
+}
+#nav-bar{
+  
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+#nav-bar a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+
+
+
+#hero-section{
+    display: flex;
+    justify-content: space-between;
+    height: 12%;
+    margin-top: 1%;
+    
+}
+hr{
+    color: black;
+    border: 2px solid black;
+}
+
+.child img{
+    height: 100%;
+    width:185px ;
+    border: 2px solid green;
+   transform: rotateY(0.5turn);
+
+    
+
+}
+.glass-tree img{
+    height: 100%;
+    width: 185px;
+    border: 2px solid green;
+    
+
+}
+.explain-section{
+    /* border:rgba(151, 25, 0, 0.936) 2px solid ; */
+    height: 45%;
+    
+}
+
+.text-box1{
+    font-size: 20px;
+    padding: 3%;
+    font-weight: 700;
+    width: 90%;
+    margin-left: 3%;
+    height: 28%;
+    
+    
+    
+}
+.split-text {
+    width: 90%;
+    margin: auto;
+}
+.text-box2{
+    font-size: 17px;
+    padding: 2%;
+    font-weight: 700;
+    background-color: rgb(54, 182, 35);
+    height: 16%;
+    
+}
+.text-box3{
+    font-size: 17px;
+    padding: 3%;
+    font-weight: 700;
+    height: 19%;
+    
+   
+    
+}
+em{
+    font-size: 25px;
+    font-weight: 900;
+}
+.big-pic{
+    margin-top: 2%;
+    background-image: url(/images/glass-planet.jpg);
+    height: 37%;
+    background-size: cover;
+}
+
+#quote{
+    height: 3%;
+    background-color: darkgreen;
+    margin-top: 1%;
+}
+.top-foot{
+    height: 17%;
+    background-image: url(/images/leaf-planet.jpg);
+    background-size: cover;
+    position: relative;
+    border: 2px solid black;
+}
+.top-foot  button{
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    height: 12%;
+    width: 30%;
+    border-radius: 9%;
+    padding: 1%;
+    
+    background-color: blue;
+
+}
+
+button a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+footer{
+    background-color:#afaf17;
+    height: 14%;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    
+}
+.copyright{
+    position: absolute;
+    bottom: 30%;
+    right: 16%;
+}
+.name{
+    position: absolute;
+    bottom: 15%;
+    right: 7%;
+
+}
+#pages{
+    margin-left:5%;
+    font-size: 23px;
+    margin-top: 2%;
+
+}
+#pages li{
+    font-size: 18px;
+    list-style-type: none;
+    margin-top: 2%;
+
+}
+#pages a{
+    text-decoration: none;
+    color: black;
+}
+.social-media{
+    /* border: 2px red solid;*/
+     height: 50%;
+     width: 55%;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3%;
+    padding: 5%;
+
+   
+
+
+}
+.social-media a{
+    color: black;
+    font-size: 30px;
+   
+
+}
+@media screen and (min-width:400px){
+    h1{font-size: 1.7rem;
+    }
+    #nav-bar a{
+        font-size: 1.125rem;
+    }
+
+}
+@media screen and (min-width:600px){
+    .glass-tree img{
+        width: 85%;
+    }
+    .child img{
+        width: 110%;
+    }
+    #hero-section{
+        justify-content: space-around;
+        padding-right: 2%;
+    }
+
+}
+@media screen and (min-width:730px){
+    .login-html{
+        width: 62vw;
+    }
+
+    .glass-tree img{
+        width:40vmax;
+        
+    }
+    .child img{
+        width:42vmax;
+      
+    }
+
+    #hero-section{
+        justify-content: space-between;
+       
+        
+    }
+    .text-box1{
+        font-size: 1.55rem;
+        height: 13vh;
+      
+       
+        width: 90%;
+        margin-left: 3%;   
+    } 
+    .text-box2{
+        font-size: 1.2rem;
+        height: 9vh;
+    }
+    .text-box3{
+        font-size: 1.2rem;
+        height: 9vh;
+        margin-top: 2%;
+    }
+    .big-pic{
+       
+        height: 32vh;
+       background-size:cover;
+       background-repeat: no-repeat;
+       background-position: center;
+        
+    }
+    #quote{
+        height: 0;
+    }
+    .top-foot{
+        height: 35vh;
+        background-position: center;
+    }
+    footer{
+       height: 19vh;
+    }
+    .copyright{
+        right: 11%;
+    }
+    #pages b{
+        text-decoration: underline;
+    }
+    #pages a{
+      font-weight: 550;
+    }
+
+
+}
+@media screen and (min-width:795px){
+    header{
+       padding-top: 2%;
+       
+    }
+    h1{
+        margin-right: 40vw;
+    }
+    #nav-bar{
+        justify-content: flex-end;
+        gap: 7%;
+    }
+    #hero-section{
+        height: 17vh;
+    }
+    .glass-tree{
+        width: 50vw;
+    }
+    .child{
+        width: 48vw;
+    }
+    .text-box1{
+        height: 11vh;
+    }
+    .top-foot{
+        height: 27vh;
+    }
+    footer{
+        height: 15vh;
+    }
+
+}
+@media screen and (min-width:815px){
+    .login-html{
+        width: 48vw;
+    }
+    .top-foot{
+        height: 28vh;
+    }
+    .big-pic{
+        height: 29vh;
+    }
+    .text-box2{
+        height: 8vh;
+    }
+    .text-box3{
+        height: 8vh;
+        margin-top: 0;
+        padding: 1%;
+    
+    }
+}
+
+@media screen and (min-width:1000px){
+    .login-html{
+        width: 35vw;
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+    #nav-bar a{
+        font-size: 1.35rem;
+    }
+    #hero-section{
+        height: 55vh;
+        padding-right: 0;
+        
+    }
+    .glass-tree{
+        width: 47vw;
+    }
+    .child{
+        width: 47vw;
+    }
+    .glass-tree img{
+        width: 100%;
+    }
+    .child img{
+        width: 100%;
+
+    }
+    .text-box1{
+        font-size: 1.5rem;
+        height: 14vh;
+       width: 75vw;
+       
+        margin-top: 0;
+       padding: 0;
+       margin: auto;
+    }
+    .big-pic{
+       
+        height: 58vh;
+        background-size: cover;
+        background-size: auto;
+        background-color: rgb(54, 182, 35);
+        margin-top: 0;
+
+    }
+    .text-box2{
+        padding: 0;
+        
+        height: 10vh;
+        
+    }
+    .text-box2 p{
+        width: 75vw;
+        margin: auto; 
+    }
+    .text-box3{
+        /* border: 2px solid blue; */
+        padding: 0;
+        width: 75vw;
+        margin: auto;
+    }
+    .explain-section{
+        height: 92vh;
+    }
+    .top-foot{
+        height: 80vh;
+    }
+    .top-foot
+     button{
+         width: 15vw;
+         border-radius: 2rem;
+     }
+    footer{
+        height: 33vh;
+        justify-content: space-between;
+        padding: 1% 2% 1% 10%;
+    }
+
+    .social-media{
+        width: 45vh;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4%;
+    }
+    .name{
+        right: 40%;
+        font-size: 1.2rem;
+
+    }
+    .copyright{
+        right:45%;
+        top: 45%;
+        font-size: 1.2rem;
+    }
+
+
+}
+
+

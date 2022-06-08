@@ -477,6 +477,21 @@ footer{
      .nav-bar{
         width: 46%;
     }
+    footer{
+        padding-bottom: 1%;
+        gap: 3%;
+    }
+    .copyright p{
+        text-align: center;
+        width: 95%;
+        padding-left: 0;
+        margin: auto;
+    
+    }
+    .trade-mark{
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
 
 }
 @media screen and (max-width:365px){

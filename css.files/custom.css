@@ -297,7 +297,7 @@ li a{
     height: 40%;
    
     margin-bottom: 0;
-    background-image: url(/images/testemon.jpg);
+    background-image: url(../images/testemon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     

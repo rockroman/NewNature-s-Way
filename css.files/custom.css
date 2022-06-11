@@ -477,7 +477,8 @@ p{
 
 @media screen and (max-width:890px){
    .img-fluid {
-    height: 85%;
+    height: 51%;
+    top:13%;
    }
    .dropdown li{
     width:160px;
@@ -488,7 +489,7 @@ p{
 }
 .message{
    
-    top: 63%;
+    top: 49%;
     font-size: 1.1rem;
 }
 #right-side p{
